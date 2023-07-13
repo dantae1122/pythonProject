@@ -2852,17 +2852,17 @@
 
 # 숫자를 맞추는 로직
 
-import random
+# import random
 
-password = []
-result = []
-for i in range(6):
-    a = random.randint(0,9)
-    password.append(a)
+# password = []
+# result = []
+# for i in range(6):
+#     a = random.randint(0,9)
+#     password.append(a)
 
-for i in range(0,6):
-    for j in range(0,10):
-        if j == password[i]:
-            result.append(j)
+# for i in range(0,6):
+#     for j in range(0,10):
+#         if j == password[i]:
+#             result.append(j)
 
-print("비밀번호는",result[0],result[1],result[2],result[3],result[4],result[5],"입니다")
+# print("비밀번호는",result[0],result[1],result[2],result[3],result[4],result[5],"입니다")
