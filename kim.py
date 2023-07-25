@@ -2410,7 +2410,8 @@
 #
 # # a = int(input("숫자를 입력해주세요"))
 # # b = int(input("숫자를 입력해주세요"))
-# #
+# #부산 날씨
+
 # # if -1000 <= a <= 1000 and -1000 <= b <= 1000 and a != b:
 # #     if a > b:
 # #         print(b)
@@ -2626,7 +2627,8 @@
 #
 # def make_honey():
 #     global a
-#     if t.xcor() == -75 and t.ycor() == 75:
+#     if t.xcor() == -75 and t.ycor() == 75:청주 날씨
+
 #         t2.clear()
 #         t2.write(a-1, font=("굴림체", 30, "bold"))
 #         a -= 1
@@ -2864,5 +2866,64 @@
 #     for j in range(0,10):
 #         if j == password[i]:
 #             result.append(j)
-
 # print("비밀번호는",result[0],result[1],result[2],result[3],result[4],result[5],"입니다")
+
+import pyautogui
+import time
+import pyperclip
+# from selenium import webdriver
+
+# 날씨 = ["서울 날씨","시흥 날씨","청주 날씨","부산 날씨","대구 날씨"]
+
+
+
+
+# driver = webdriver.Chrome('./chromedriver.exe')
+# driver.get('https://gawon.sen.ms.kr/64612/subMenu.do')
+# driver.implicitly_wait(3)
+# driver.maximize_window()
+
+
+# while True:
+#     print(pyautogui.position())
+
+# x1 = 105
+# y1 = 83
+
+x = 1141
+y = 470
+
+
+# picPosition = pyautogui.locateOnScreen('pic1.png') #이미지가 위치한 좌표를 알려주고
+
+# print(picPosition)
+# clickPosition = pyautogui.center(picPosition) #이미지좌표의 중앙부분을 클릭해줌
+# pyautogui.click(clickPosition) #이미지 좌표 더블클릭
+
+x_1 = 826
+grid_1 = [[x_1, 470],[x_1 + 105, 470],[x_1 + 210, 470],[x_1 + 315, 470],[x_1+420, 470]]
+grid_2 = [[x_1, 553],[x_1 + 105, 553],[x_1 + 210, 553],[x_1 + 315, 553],[x_1+420, 553]]
+grid_3 = [[x_1, 636],[x_1 + 105, 636],[x_1 + 210, 636],[x_1 + 315, 636],[x_1+420, 636]]
+grid_4 = [[x_1, 719],[x_1 + 105, 719],[x_1 + 210, 719],[x_1 + 315, 719],[x_1+420, 719]]
+grid_5 = [[x_1, 802],[x_1 + 105, 802],[x_1 + 210, 802],[x_1 + 315, 802],[x_1+420, 802]]
+
+
+for i in range(1,6):
+    for j in range(1,6):
+    pyautogui.moveTo(grid_1()
+    pyautogui.click()
+    time.sleep(0.5)
+
+    picPosition = pyautogui.locateOnScreen('pic1.png')
+    clickPosition = pyautogui.center(picPosition)
+    pyautogui.click(clickPosition)
+
+    if i == 2 or 9 or 16 or 23 or 30:
+        x = 826
+        y += 83
+
+    else:
+        x += 105
+    
+    저장경로 = '//192.168.0.225/학원공유/김우찬/' + str(i) + '.png'
+    pyautogui.screenshot(저장경로, region=(393,212,669,410))
